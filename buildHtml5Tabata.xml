@@ -1,0 +1,14 @@
+<project name="html5Tabata" basedir="." default="build">
+    
+    <property name="dir.bin" value="bin"/>
+    <property name="dir.source" value="source"/>
+    
+    <target name="clean">
+        <delete dir ="${dir.bin}"/>
+        <mkdir dir ="${dir.bin}"/>
+    </target>
+    
+    <target name="build" depends="clean">
+        <copy file="${dir.source}/tabata.html" todir="${dir.bin}"/>
+    </target>    
+</project> 
